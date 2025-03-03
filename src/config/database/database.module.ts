@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { EnvModule } from 'src/env/env.module';
-import { EnvService } from 'src/env/env.service';
+import { EnvModule } from 'src/config/env/env.module';
+import { EnvService } from 'src/config/env/env.service';
 import { databaseProviders } from './database.providers';
 
 @Module({

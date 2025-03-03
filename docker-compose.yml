@@ -1,0 +1,19 @@
+networks:
+  wizdrawserver_wfs-net:
+    external: true
+
+services:
+  db:
+    image: postgres:17
+    container_name: postgres
+    restart: always
+    environment:
+      - POSTGRES_DB=${API_DB_SCHEMA}
+      - POSTGRES_USER=${API_DB_USERNAME}
+      - POSTGRES_PASSWORD=${API_DB_PASSWORD}
+    ports:
+      - '5433:5432'
+    volumes:
+      - /Users/agniev/db/wallet/data:/var/lib/postgresql/data
+    networks:
+      - wizdrawserver_wfs-net

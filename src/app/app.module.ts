@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { DatabaseModule } from './config/database/database.module';
-import { envSchema } from './env/env';
-import { EnvModule } from './env/env.module';
+import { DatabaseModule } from '../config/database/database.module';
+import { envSchema } from '../config/env/env';
+import { EnvModule } from '../config/env/env.module';
 import { UserModule } from './user/user.module';
 
 @Module({

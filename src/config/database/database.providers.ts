@@ -1,5 +1,5 @@
-import { EnvService } from 'src/env/env.service';
-import { User } from 'src/user/entities/user.entity';
+import { User } from 'src/app/user/entities/user.entity';
+import { EnvService } from 'src/config/env/env.service';
 import { DataSource } from 'typeorm';
 
 export const databaseProviders = [
